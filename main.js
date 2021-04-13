@@ -2143,21 +2143,39 @@ let obj = {
 
 
 //   console.log(obj.data[0][10]);
- function saveLine10(yourObj) {
+ function alphabetizeLine10(object) {
     let arr = [];
-    let objLength = yourObj.length;
 
-    for(let i = 0; i < yourObj.data.length; i++) {
+    for(let i = 0; i < object.data.length; i++) {
         arr.push(obj.data[i][10]);
     }
 
    let newArr = arr.sort((a,b)=>a.localeCompare(b));
-   let uniqueChars = [...new Set(newArr)];
-   return uniqueChars.length;
+   return newArr;
+  //  let uniqueChars = [...new Set(newArr)];
+  //  return uniqueChars.length;
+  // return uniqueChars;
     // // return RTCRtpReceiv
     // for (let i = 0; i < arr.length; i++) {
     //     arr = arr.sort((a,b)=>a-b);
     //     // console.log(`${arr[i]}\n`);
     // }
  }
- console.log(saveLine10(obj));
+ console.log(alphabetizeLine10(obj));
+
+
+ function uniqueLine10(object) {
+   let arr = [];
+
+    for(let i = 0; i < object.data.length; i++) {
+        arr.push(obj.data[i][10]);
+    }
+
+    let newArr = arr.sort((a,b)=>a.localeCompare(b));
+    let uniqueChars = [...new Set(newArr)];
+    console.log(uniqueChars.length);
+    return uniqueChars;
+    
+
+ }
+ console.log(uniqueLine10(obj));
