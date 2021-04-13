@@ -2142,7 +2142,6 @@ let obj = {
   };
 
 
-//   console.log(obj.data[0][10]);
  function alphabetizeLine10(object) {
     let arr = [];
 
@@ -2152,14 +2151,6 @@ let obj = {
 
    let newArr = arr.sort((a,b)=>a.localeCompare(b));
    return newArr;
-  //  let uniqueChars = [...new Set(newArr)];
-  //  return uniqueChars.length;
-  // return uniqueChars;
-    // // return RTCRtpReceiv
-    // for (let i = 0; i < arr.length; i++) {
-    //     arr = arr.sort((a,b)=>a-b);
-    //     // console.log(`${arr[i]}\n`);
-    // }
  }
  console.log(alphabetizeLine10(obj));
 
@@ -2176,6 +2167,5 @@ let obj = {
     console.log(uniqueChars.length);
     return uniqueChars;
     
-
  }
  console.log(uniqueLine10(obj));
